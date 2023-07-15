@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<unistd.h>
 /**
- * main -  program that prints, and that piece of art is useful" - Dora Korpar, 2015-10-19
+ * main - C program that prints using fputs
  * return 1 (success)
  */
 int main(void)

@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * main -  program that prints the size of various types on the compute compiled and  run on
+ * main - C program to print data types
  * return 0(success)
  */
 int main(void)
