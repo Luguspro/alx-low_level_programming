@@ -13,12 +13,16 @@ int main(void)
 		{
 			if ((a != b) || (a < b))
 			{
-				putchar(a);
-				putchar(b);
-				putchar(',');
-				putchar(' ');
+				putchar(a + '0');
+				putchar(b + '0');
+				if (!((a == 9) && (b == 8)))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
