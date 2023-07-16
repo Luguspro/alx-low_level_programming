@@ -1,8 +1,10 @@
 #include<stdio.h>
+
 /**
  * main - C program to print data types
- * return 0(success)
+ * Return: 0(success)
  */
+
 int main(void)
 {
 char a;
