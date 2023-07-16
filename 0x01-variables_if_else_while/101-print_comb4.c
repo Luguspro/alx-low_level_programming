@@ -13,7 +13,7 @@ int main(void)
 		{
 			for (c = 0; c < 10; c++)
 			{
-				if ((a != b) || (b != c) || (a != c) || ((a < (b & C)) & (b < c)))
+				if ((a != b) || (b != c) || (a != c) || ((a < (b && c)) && (b < c)))
 				{
 					putchar(a);
 					putchar(b);
