@@ -5,17 +5,17 @@
  */
 int main(void)
 {
-	int a, b;
+	int alp, num;
 
-	for (a = 0; a < 10; a++)
+	for (alp = '0'; alp <= '9'; alp++)
 	{
-		for (b = 0; b < 10; b++)
+		for (num = '0'; num <= '9'; num++)
 		{
-			if ((a != b) || (a < b))
+			if (!((alp == num) || (alp > num)))
 			{
-				putchar(a + '0');
-				putchar(b + '0');
-				if (!((a == 9) && (b == 8)))
+				putchar(alp);
+				putchar(num);
+				if (!((alp == '8') && (num == '9')))
 				{
 					putchar(',');
 					putchar(' ');

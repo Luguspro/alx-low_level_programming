@@ -5,20 +5,20 @@
  */
 int main(void)
 {
-	int a, b, c;
+	int alp, num, rom;
 
-	for (a = 0; a < 10; a++)
+	for (alp = '0'; alp <= '9'; alp++)
 	{
-		for (b = 0; b < 10; b++)
+		for (num = '0'; num <= '9'; num++)
 		{
-			for (c = 0; c < 10; c++)
+			for (rom = '0'; rom <= '9'; rom++)
 			{
-				if (!((a == b) || (b == c) || (a == c)) || ((a < (b && c)) && (b < c)))
+				if (!((rom == num) || (alp == num) || (num > rom) || (alp > num)))
 				{
-					putchar(a + '0');
-					putchar(b + '0');
-					putchar(c + '0');
-					if (!((a == 7) && (b == 8) && (c == 9)))
+					putchar(alp);
+					putchar(num);
+					putchar(rom);
+					if (!((alp == '7') && (num == '8') && (rom == '9')))
 					{
 						putchar(',');
 						putchar(' ');
