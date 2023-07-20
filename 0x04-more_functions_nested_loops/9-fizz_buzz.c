@@ -21,9 +21,13 @@ int main(void)
 		{
 			printf("Fizz");
 		}
-		else
+		else if ((a % 15) == 0)
 		{
 			printf("FizzBuzz");
+		}
+		else
+		{
+			printf("%d", a);
 		}
 		if (a < 100)
 			printf(" ");
