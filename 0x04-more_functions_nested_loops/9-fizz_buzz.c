@@ -13,21 +13,21 @@ int main(void)
 
 	for (a = 1; a <= 100; a++)
 	{
-		if ((a % 5) == 0)
+		if ((a % 15) == 0)
 		{
-			printf("Buzz");
+			printf("FizzBuzz");
 		}
 		else if ((a % 3) == 0)
 		{
 			printf("Fizz");
 		}
-		else if ((a % 15) == 0)
+		else if ((a % 5) == 0)
 		{
-			printf("FizzBuzz");
+			printf("Buzz");
 		}
 		else
 		{
-			printf("%i", a);
+			printf("%d", a);
 		}
 		if (a < 100)
 			printf(" ");
