@@ -4,12 +4,13 @@
  * check_pal - check the character for palindrome recursively
  * @s: string to check
  *@i: iterator
+ *@len: length of the string
  *
  * Return: 1 if palindrone, 0 if not
  */
 int check_pal(char *s, int i, int len)
 {
-	if (*(s + 1) != *(s + (len - 1)))
+	if (*(s + i) != *(s + (len - 1)))
 		return (0);
 	if (i >= len)
 		return (1);
