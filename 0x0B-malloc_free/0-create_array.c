@@ -3,7 +3,7 @@
 #include <unistd.h>
 
 /**
- * *create_array - creates an array of chars and initializes it with a specific char
+ * *create_array - creates an array of chars
  * @size: size of arrray
  * @c: character to point to
  *
