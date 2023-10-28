@@ -1,30 +1,24 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-* print_binary - print binary equivalent of a decimal number
-* @n: binary number supposed to be printed
+* print_binary - print binary equal of a decimal number
+* @n: binary number that is to be printed
 *
-* Return: void
+* Return: void(Nothing)
 */
 
 void print_binary(unsigned long int n)
 {
-	int b = 63, count = 0;
-	unsigned long int current;
+	int i, bit_num = sizeof(unsigned long int) * 8;
 
-while (b >= 0)
-{
-	current = n >> b;
-	if (current & 1)
+	for (i = bit_num - 1; i >= 0; i--)
 	{
-		_putchar('1');
-		count++;
-	}
-	else if (count)
-		_putchar('0');
-	b++;
-}
-if (!count)
-	_putchar('0');
-}
+		unsigned long int mask = 1UL << i;
 
+		if (n & mask)
+			printf("1");
+		else
+			printf("0");
+	}
+}
